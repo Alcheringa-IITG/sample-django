@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyAppLogin</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="registration">Registration</string>
+    <string name="to_login_page">To Login Page</string>
+</resources>

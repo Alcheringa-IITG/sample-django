@@ -1,8 +1,16 @@
 <resources>
     <string name="app_name">MyAppLogin</string>
-    <string name="username">username</string>
-    <string name="password">password</string>
     <string name="email">email</string>
     <string name="registration">Registration</string>
     <string name="to_login_page">To Login Page</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="to_register_page">To Register Page</string>
+    <string name="button_2">Button 2</string>
+    <string name="todo">TODO</string>
+    <string name="title">title</string>
+    <string name="text">text</string>
+    <string name="category">Category</string>
+    <string name="save">Save</string>
 </resources>

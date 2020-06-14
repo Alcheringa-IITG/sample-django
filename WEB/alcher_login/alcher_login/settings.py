@@ -44,9 +44,10 @@ INSTALLED_APPS = [
     'myaccount',
     'mypost',
     'myprofile',
+
+    'restaccount',
     'restpost',
     'restprofile',
-    'restaccount',
 
 ]
 

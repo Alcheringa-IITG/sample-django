@@ -1,8 +1,8 @@
 package com.example.android.myapplogin;
 
-//import com.example.samuray.myapplication.model.CategoryModel;
-//import com.example.samuray.myapplication.model.Login;
-//import com.example.samuray.myapplication.model.PostModel;
+import com.example.android.myapplogin.model.CategoryModel;
+import com.example.android.myapplogin.model.Login;
+import com.example.android.myapplogin.model.PostModel;
 import com.example.android.myapplogin.model.User;
 
 import java.util.List;
@@ -17,6 +17,7 @@ import retrofit2.http.Path;
 
 public interface PostApi {
 
+
     String root = "http://192.168.43.243:8000/";
 //    String root = "http://127.0.0.1:8000/";
 
@@ -26,21 +27,23 @@ public interface PostApi {
     String POST_URL = base_local + "post/";
     String API_URL = root + "api/v1/";
 
-//    @POST("api-token-auth/")
-//    Call<User> login(@Body Login login);
+
+
+    @POST("api-token-auth/")
+    Call<User> login(@Body Login login);
 
     @POST("register/")
     Call<User> registrationUser(@Body User userModel);
 
 
-//    @GET("post/list/")
-//    Call<List<PostModel>> getListPost();
-//
+    @GET("post/list/")
+    Call<List<PostModel>> getListPost();
+
 //    @GET("post/{id}/")
 //    Call<PostModel> getPost(@Path(value = "id", encoded = true) String id);
-//
-//    @POST("add/")
-//    Call<PostModel> addPost(@Header("Authorization")  String authToken, @Body PostModel postModel);
+
+    @POST("add/")
+    Call<PostModel> addPost(@Header("Authorization")  String authToken, @Body PostModel postModel);
 //
 //    @GET("profile/list/")
 //    Call<List<PostModel>> getProfileList(@Header("Authorization")  String authToken);
@@ -54,8 +57,8 @@ public interface PostApi {
 //    Call<List<PostModel>> deletePost(@Header("Authorization")  String authToken, @Path(value = "id", encoded = true) String id);
 //
 //
-//    @GET("category/list/")
-//    Call<List<CategoryModel>> getAllCategory();
+    @GET("category/list/")
+    Call<List<CategoryModel>> getAllCategory();
 //
 //    @GET("list/{id}/")
 //    Call<List<CategoryModel>> getCategoryById(@Path(value = "id", encoded = true) Integer id);
